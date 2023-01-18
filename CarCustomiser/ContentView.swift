@@ -64,8 +64,8 @@ struct ContentView: View {
         )
         
         Form {
-            VStack(alignment: .leading, spacing: 20) {
                 Text("\(starterCars.cars[selectedCar].displayStats())")
+            Section {
                 Button("Next Car", action: {
                     if selectedCar == self.starterCars.cars.count - 1 {
                         selectedCar = 0
